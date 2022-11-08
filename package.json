@@ -1,0 +1,44 @@
+{
+  "name": "wordpress-boilerplate",
+  "version": "1.0.0",
+  "description": "WP Boilerplate by Airish",
+  "main": "index.js",
+  "author": "Airish",
+  "license": "proprietary",
+  "private": true,
+  "homepage": "https://github.com/iumairish/wordpress-theme-boilerplate/",
+  "scripts": {
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
+    "watch": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iumairish/wordpress-theme-boilerplate.git"
+  },
+  "bin": {
+    "cross-env": "src/bin/cross-env.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.*",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "import-glob": "^1.5.0",
+    "install-peers": "^1.0.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "node-sass-glob-importer": "^5.1.2",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-concat-plugin": "^3.0.0"
+  }
+}

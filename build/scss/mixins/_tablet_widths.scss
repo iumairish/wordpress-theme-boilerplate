@@ -1,0 +1,66 @@
+@mixin for_screen( $screen ){
+
+	@if $screen == mobile {
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+		  @content;
+		}
+	}
+
+	@else if $screen == tablet{
+
+		@media only screen and ( min-width: 569px ) and ( max-width: 768px ) {
+
+			@content;
+
+		}
+	}
+
+	@else if $screen == mobileAndTablet{
+		@media only screen and ( min-width: 320px ) and ( max-width: 768px ) {
+
+			@content;
+
+		}
+	}
+
+	@else if $screen == tabletLarge{
+
+		@media only screen and ( min-width: 769px ) and ( max-width: 1025px ) {
+
+			@content;
+
+		}
+
+	}
+
+	@else if $screen == smallDesktop{
+
+		@media only screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+
+			@content;
+
+		}
+
+	}
+
+	@else if $screen == hd{
+
+		@media only screen and ( min-width: 1581px ) {
+
+			@content;
+
+		}
+
+	}
+
+	@else if $screen == desktopAndHD{
+
+		@media only screen and ( min-width: 992px ) {
+
+			@content;
+
+		}
+
+	}
+
+}

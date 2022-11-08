@@ -1,0 +1,21 @@
+@mixin font-family() {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@function calculate-rem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculate-rem($size);
+}
+
+@mixin transition() {
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
